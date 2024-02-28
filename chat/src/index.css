@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(0, 149, 159, 0.896);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.joinChatContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  height: auto;
+  margin-top: 100%;
+  padding: 10px;
+  border: 5px solid black;
+  color: aliceblue;
+}
+.message{
+  border: 5px solid black;
+  width: 350px;
+  height: 500px;
+}
+.chat_header{
+  color: aliceblue;
+}
+.chat_footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+.chat_body{
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: 380px;
+  overflow-y: auto;
+  /* border: 2px solid red; */
+}
+.chat_body .msg{
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+  /* border: 2px solid red; */
+}
+.message_meta{
+  display: flex;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+#you{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  float: right;
+}
+#other{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  float: left;
+}
+.message_content{  
+  height: auto;
+}
